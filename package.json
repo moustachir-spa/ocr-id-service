@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test:queue": "tsx scripts/test_queue.ts"
+    "test:queue": "tsx scripts/test_queue.ts",
+    "typecheck": "pnpm --filter @ocr-id-service/contracts build && pnpm --recursive exec tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

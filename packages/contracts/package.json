@@ -1,0 +1,11 @@
+{
+  "name": "@ocr-id-service/contracts",
+  "version": "0.1.0",
+  "description": "Shared TypeScript contracts for OCR ID Service BullMQ jobs and results.",
+  "license": "MIT",
+  "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist"],
+  "scripts": { "build": "tsc -p tsconfig.build.json" },
+  "devDependencies": { "typescript": "^5.9.0" }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@ocr-id-service/react",
+  "version": "0.1.0",
+  "description": "Framework-neutral React hooks for asynchronous OCR ID scans.",
+  "license": "MIT",
+  "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist"],
+  "scripts": { "build": "tsc -p tsconfig.build.json" },
+  "dependencies": { "@ocr-id-service/contracts": "workspace:*" },
+  "peerDependencies": { "react": ">=18.0.0" },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "typescript": "^5.9.0"
+  }
+}
