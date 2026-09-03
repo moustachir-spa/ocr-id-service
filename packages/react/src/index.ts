@@ -6,7 +6,6 @@ export interface IdentityOcrTransport {
   submit(input: OcrScanInput & { file: File }): Promise<{ jobId: string }>;
   status(jobId: string): Promise<OcrJobStatus>;
 }
-
 export interface UseIdentityOcrOptions {
   transport: IdentityOcrTransport;
   pollIntervalMs?: number;
@@ -76,4 +75,3 @@ export function useIdentityOcr(options: UseIdentityOcrOptions): UseIdentityOcrSt
 
   return { jobId, state, result, error, isProcessing: state === "queued" || state === "processing", submit, reset };
 }
-
